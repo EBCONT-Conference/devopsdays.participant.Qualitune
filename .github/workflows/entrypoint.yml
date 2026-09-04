@@ -23,6 +23,7 @@ jobs:
     if: ${{ inputs.build == true || github.event_name == 'push' }}
     uses: EBCONT-Conference/devopsdays.demo.reusable-workflow.build.docker/.github/workflows/entrypoint.yml@v1
     secrets: inherit
+    ### Secrets Leaked! Alarm!
 
   deployment:
     name: Deployment
