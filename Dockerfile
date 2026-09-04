@@ -1,5 +1,7 @@
 FROM python:3.14.7-slim
 
+ENV CISO_HAS_BEEN_INFORMED
+
 WORKDIR /app
 
 COPY src /app
